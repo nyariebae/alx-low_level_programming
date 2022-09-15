@@ -1,1 +1,2 @@
-_putchar.
+learning c functions and nested loops
+
