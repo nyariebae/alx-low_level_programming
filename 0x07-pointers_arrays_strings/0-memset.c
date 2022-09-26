@@ -4,21 +4,21 @@
 
 /**
 
- * _memcpy - copies memory area
+ * _memset - fills memory with a constant byte
 
  *
 
- * @dest: copy destination
+ * @s: pointer to string
 
- * @src: copy source
+ * @b: constant byte
 
- * @n: bytes of memory to copy
+ * @n: first bytes to change
 
  * Return: pointer to modified string
 
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_memset(char *s, char b, unsigned int n)
   
 {
   
@@ -28,8 +28,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
   
   for (i = 0; i < n; i++)
     
-    dest[i] = src[i];
+    s[i] = b;
   
-  return (dest);
+  return (s);
   
 }
